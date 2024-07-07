@@ -30,7 +30,7 @@ mongoose
   });
 
 // START THE SERVER
-const port = process.env.port;
+const port = process.env.port || 3000;
 app.listen(port, () => {
   console.log(`Server running on the port ${port}..`);
 });
